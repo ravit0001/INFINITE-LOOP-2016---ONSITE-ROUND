@@ -12,7 +12,7 @@ EASY - MEDIUM
 HASHING , MAPPING
  
 #PROBLEM:
-Find the numbers of programmes which is need to terminate by the $OS$.
+Find the numbers of programmes which is need to terminate by the <b>OS</b>.
 
 
 #EXPLANATION:
@@ -21,21 +21,21 @@ you need to count programmes and their occurrences on different machines,so, you
 technique to do this.  
 
 for example:   
-$N1,N2,N3,N4,N5$ are the different machines.  
+<b>N1,N2,N3,N4,N5</b> are the different machines.  
 and the running programmes are     
- $ N1$ = 2  3  4 5  
-                               $N2$ = 3 4 5  
-                               $N3$ = 3 2  
-                 $N4$ = 3 4  
-                 $N5$ = 2 3 4 
+ <b> N1</b> = 2  3  4 5  
+                               <b>N2</b> = 3 4 5  
+                               <b>N3</b> = 3 2  
+                 <b>N4</b> = 3 4  
+                 <b>N5</b> = 2 3 4 
 
-so, program $2$ occur for $3$ times.  
-  program $3$ occur for $5$ times.  
-    program $4$ occur for $4$ times.  
-  program $5$ occur for $2$ times.  
-  so,programmes $2,3,4$ occurs more than two times.  
-  so,Number of programmes are $3$.  
-  Hence $3$ is the answer.  
+so, program <b>2</b> occur for <b>3</b> times.  
+  program <b>3</b> occur for <b>5</b> times.  
+    program <b>4</b> occur for <b>4</b> times.  
+  program <b>5</b> occur for <b>2</b> times.  
+  so,programmes <b>2,3,4</b> occurs more than two times.  
+  so,Number of programmes are <b>3</b>.  
+  Hence <b>3</b> is the answer.  
   
   
 #AUTHOR'S AND TESTER'S SOLUTIONS:
