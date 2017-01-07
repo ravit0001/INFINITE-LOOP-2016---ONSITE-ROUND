@@ -1,0 +1,52 @@
+#PROBLEM LINK:
+[Practice][111]  
+[Contest][222]
+
+**Author:** [RAVIT SINGH MALIK][4444]  
+**Editorialist:** [RAVIT SINGH MALIK][6666]
+
+#DIFFICULTY:
+EASY - MEDIUM
+
+#PREREQUISITES:
+HASHING , MAPPING
+ 
+#PROBLEM:
+Find the numbers of programmes which is need to terminate by the $OS$.
+
+
+#EXPLANATION:
+The OS will terminate those programmes which are running on more than 2 machines. so,for achieving this ,
+you need to count programmes and their occurrences on different machines,so, you can use hashing or MAPPING
+technique to do this.  
+
+for example:   
+$N1,N2,N3,N4,N5$ are the different machines.  
+and the running programmes are     
+ $ N1$ = 2  3  4 5  
+                               $N2$ = 3 4 5  
+                               $N3$ = 3 2  
+                 $N4$ = 3 4  
+                 $N5$ = 2 3 4 
+
+so, program $2$ occur for $3$ times.  
+  program $3$ occur for $5$ times.  
+    program $4$ occur for $4$ times.  
+  program $5$ occur for $2$ times.  
+  so,programmes $2,3,4$ occurs more than two times.  
+  so,Number of programmes are $3$.  
+  Hence $3$ is the answer.  
+  
+  
+#AUTHOR'S AND TESTER'S SOLUTIONS:
+Author's solution can be found [here][333]. 
+
+
+#RELATED PROBLEMS:
+
+[111]: https://www.codechef.com/problems/INLO31
+[222]: https://www.codechef.com/INLO1601/problems/INLO31
+[333]: https://www.codechef.com/viewsolution/11762510
+
+[4444]: http://www.codechef.com/users/ravit0001
+[6666]: http://www.codechef.com/users/ravit0001
