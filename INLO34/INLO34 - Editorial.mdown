@@ -18,22 +18,22 @@ Find the number of ways of selecting one or more items from N distinct things.
 #EXPLANATION:
 So, Number of ways of selecting one or more items from N distinct things.
 
-nC0 + nC1 + nC2 + nC3 + ------------- + nCn = $2^n$
+nC0 + nC1 + nC2 + nC3 + ------------- + nCn = <b>2<sup>n</sup></b>
 
-nC1 + -----------------nCn =$2^n$ - nC0
+nC1 + -----------------nCn =<b>2<sup>n</sup></b> - nC0
 
-= $2^n$ – 1     , [ nC0=1] 
+= <b>2<sup>n</sup></b> – 1     , [ nC0=1] 
 
 
 FOR example,
 you need to find number of ways of selecting one or more items from 5 distinct things.
 so,  
 
- 5C0 + 5C1 + 5C2 + 5C3 + 5C4 + 5C5 = $2^5$
+ 5C0 + 5C1 + 5C2 + 5C3 + 5C4 + 5C5 = <b>2<sup>5</sup></b>
 
-5C1 + 5C2 + 5C3 + 5C4 + 5C5 =$2^n$ - 5C0
+5C1 + 5C2 + 5C3 + 5C4 + 5C5 =<b>2<sup>n</sup></b> - 5C0
 
-= $2^5$ – 1=31   
+= <b>2<sup>5</sup></b> – 1=31   
 
 #AUTHOR'S AND TESTER'S SOLUTIONS:
 Author's solution can be found [here][333]. 
