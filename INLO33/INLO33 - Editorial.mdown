@@ -23,8 +23,7 @@ The algorithm exists in many variants; Dijkstra's original variant found the sho
 between two nodes, but a more common variant fixes a single node as the "source" node and 
 finds shortest paths from the source to all other nodes in the graph, producing a shortest-path tree. 
  
- $Pseudocode :$
- 
+ <b>Pseudocode :</b>
 <pre><code>
  1  function Dijkstra(Graph, source):
  2
@@ -56,7 +55,7 @@ SO,the given question is a simple improvisation of Dijkstra's algorithm, In whic
 compute when the next green flash will occur to let you travel to its neighbours and 
 use this to update shortest path information.
 
-$CODE$
+<b>CODE</b>
 <pre><code>
 int minDistance(int dist[], bool sptSet[])
 {
