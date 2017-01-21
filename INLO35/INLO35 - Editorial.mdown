@@ -12,52 +12,50 @@ MEDIUM-HARD
 SIEVE , PRIME FACTORS
  
 #PROBLEM:
-They are given 2 natural numbers $N$ and $K$. They are required to
-find out the highest power of $K$ which divides $N!$.  
+They are given 2 natural numbers <b>N</b> and <b>K</b>. They are required to
+find out the highest power of <b>K</b> which divides **N!**.  
 IN THE OTHER WORDS :  
-you need to output the highest power of $K$ (say $L$) such that $N!$ is divisible by $K^L$..  
+you need to output the highest power of <b>K<b> (say <b>L</b>) such that <b>N!</b> is divisible by <b>K<sup>L</sup></b>..  
 
 #EXPLANATION::  
 
 IF I start with an example,which is like :  
-Find the highest power of 12 ($K$) that divide 49! ($N!$).  
-Sol: We should commit to the memory that the above method is applicable only to prime numbers.    So we should write 12 in its prime factors. $12 = 2^2 \times 3$
+Find the highest power of 12 (<b>K</b>) that divide 49! (<b>N!</b>).  
+Sol: We should commit to the memory that the above method is applicable only to prime numbers.    So we should write 12 in its prime factors. <b>12 = 2<sup>2</sup> X 3</b>
 
-We find the maximum power of 2 in 49! = $\frac{49}{2}$ + $\frac{49}{4}$ + $\frac{49}{8}$ + $\frac{49}{16}$ + $\frac{49}{32}$  = $24 + 12 + 6 + 3 + 1 = 46$
+We find the maximum power of 2 in 49! = <b><sup>49</sup>&frasl;<sub>2</sub></b> + <b><sup>49</sup>&frasl;<sub>4</sub></b> + <b><sup>49</sup>&frasl;<sub>8</sub></b> + <b><sup>49</sup>&frasl;<sub>16</sub></b> + <b><sup>49</sup>&frasl;<sub>32</sub></b>  = <b>24 + 12 + 6 + 3 + 1 = 46</b>
 
-So maximum power of $2^2$ in $49!$ is $23$.
+So maximum power of <b>2^2</b> in <b>49!</b> is <b>23</b>.
 
-Now we find the maximum power of 3 in 49! = $\frac{49}{3}$ + $\frac{49}{9}$ + $\frac{49}{27}$ = $16 + 5 + 1 = 22$.  
-⇒ $49!$ =$(2^2)^{23} \times  3^{22} \times constant$.   
+Now we find the maximum power of 3 in 49! = <b><sup>49</sup>&frasl;<sub>3</sub></b> + <b><sup>49</sup>&frasl;<sub>9</sub></b> + <b><sup>49</sup>&frasl;<sub>27</sub></b> = <b>16 + 5 + 1 = 22</b>.  
+⇒ <b>49!</b> =<b>(2<sup>2</sup>)<sup>23</sup> X 3<sup>22</sup>X constant</b>.   
 
 So 22 is the maximum power of 12 that divides 49! exactly.  
 Hence 22 is the answer.
 
 
 Let's take another example ...   
-Find the highest power of $5$ ($K$) that divide $100!$ ($N!$).  
+Find the highest power of <b>5</b> (</b>K</b>) that divide <b>100!</b> (<b>N!</b>).  
 
-$\frac{100}{2}$ + $\frac{100}{4}$ + $\frac{100}{8}$ + $\frac{100}{16}$ + $\frac{100}{32}$ + $\frac{100}{64}$ ⇒ $50 + 25 + 12 + 6 + 3 + 1 = 97$  .   
-==>>  $100!$ =$5^{24} \times constant$ .  
-Hence $24$ is the answer.  
+<b><sup>100</sup>&frasl;<sub>2</sub></b> + <b><sup>100</sup>&frasl;<sub>4</sub></b> + <b><sup>100</sup>&frasl;<sub>8</sub></b> + <b><sup>100</sup>&frasl;<sub>16</sub></b> + <b><sup>100</sup>&frasl;<sub>32</sub></b> + <b><sup>100</sup>&frasl;<sub>64</sub></b> ⇒ <b>50 + 25 + 12 + 6 + 3 + 1 = 97</b>  .   
+==>>  <b>100!</b></b> =<b>5<sup>24</sup> X constant</b> .  
+Hence <b>24</b> is the answer.  
 
 
 These were the few examples for the given question and for achieving this you have to follow the following steps:    
 
-$1$. make an array of boolen which contains prime numbers as true and non prime numbers as false.  
-$2$. Find prime factors of $K$.  
-$3$. Divide the $N$ with the successive power of the prime number and take sum of the quotient.  
-$4$. repeat step 3 for all prime numbers which are present in $K$.  
-$5$. Divide each sum with the power of prime number present in $K$.  
-$6$. Take minimum from these, which is the required answer.  
+<b>1</b>. make an array of boolen which contains prime numbers as true and non prime numbers as false.  
+<b>2</b>. Find prime factors of <b>K</b>.  
+<b>3</b>. Divide the <b>N</b> with the successive power of the prime number and take sum of the quotient.  
+<b>4</b>. repeat step 3 for all prime numbers which are present in <b>K</b>.  
+<b>5</b>. Divide each sum with the power of prime number present in <b>K</b>.  
+<b>6</b>. Take minimum from these, which is the required answer.  
     
 
 
 #AUTHOR'S AND TESTER'S SOLUTIONS:
 Author's solution can be found [here][333]. 
 
-
-#RELATED PROBLEMS:
 
 [111]: https://www.codechef.com/problems/INLO35
 [222]: https://www.codechef.com/INLO1601/problems/INLO35
