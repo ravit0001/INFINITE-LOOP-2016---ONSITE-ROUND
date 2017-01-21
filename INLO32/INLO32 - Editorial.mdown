@@ -16,20 +16,20 @@ You have choose correct option for the given questions.
 
 
 #EXPLANATION:
-For question $1$.   
-     $n^2$ $√n$ = $n^{2.5}$= $O(n^{3})$  
+For question <b>1</b>.   
+     <b>n<sup>2</sup></b> <b>√n</b> = <b>n<sup>2.5</sup></b>= <b>O(n<sup>3</sup>)</b>  
     A theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n, which is usually the number of items. Informally, saying some equation f(n) = O(g(n)) means it is less than some constant multiple of g(n). The notation is read, "f of n is big oh of g of n".
 
 for more information click [here][444]  
 
-For question $2$.  
-   Among the four $Bellman-Ford$ is Dynamic alogorithm,while $Prim's , Kruskal's , Dijkstra's$ algorithm all 
-   are $Greedy$ alogorithm.  
-Dijksra’s algorithm is a Greedy algorithm and time complexity is $O(VLogV)$ (with the use of Fibonacci heap). Dijkstra doesn’t work for Graphs with negative weight edges, Bellman-Ford works for such graphs. Bellman-Ford is also simpler than Dijkstra and suites well for distributed systems. But time complexity of Bellman-Ford is $O(VE)$, which is more than Dijkstra.
+For question <b>2</b>.  
+   Among the four <b>Bellman-Ford</b> is Dynamic alogorithm,while <b>Prim's , Kruskal's , Dijkstra's</b> algorithm all 
+   are <b>Greedy</b> alogorithm.  
+Dijksra’s algorithm is a Greedy algorithm and time complexity is<b>O(VLogV)</b> (with the use of Fibonacci heap). Dijkstra doesn’t work for Graphs with negative weight edges, Bellman-Ford works for such graphs. Bellman-Ford is also simpler than Dijkstra and suites well for distributed systems. But time complexity of Bellman-Ford is <b>O(VE)</b>, which is more than Dijkstra.
 
-For question $3$.  
-    Then the number is $3^3 \times 2^6$ = 1728, and the 28 divisors of 1728 are:
-    so,$(3+1) \times (6+1)$=28.
+For question <b>3</b>.  
+    Then the number is <b>3<sup>3</sup> X 2<sup>6</sup></b> = 1728, and the 28 divisors of 1728 are:
+    so,<b>(3+1) X (6+1)</b>=28.
 
 
 
@@ -37,8 +37,8 @@ For question $3$.
 
 1 2 4 8 16  32  64  3 6 12  24  48  96  192 9 18  36  72  144 288 576 27  54  108 216 432 864 1728 
 
-For question $4$.  
-   last two digits of $11 \times 22 \times 33 \times 44 \times 55$ can be find by  $(11 \times 22 \times 33 \times 44 \times 55)$%100=20.
+For question <b>4</b>.  
+   last two digits of <b>11 X 22 x 33 X 44 X 55</b> can be find by  <b>(11 X 22 X 33 X 44 X 55)</b> %100=20.
 
 for last digit you can use %10 so,for last 3 digit use %1000.
 
