@@ -39,7 +39,6 @@ so,
 Author's solution can be found [here][333]. 
 
 
-#RELATED PROBLEMS:
 
 [111]: https://www.codechef.com/problems/INLO34
 [222]: https://www.codechef.com/INLO1601/problems/INLO34
