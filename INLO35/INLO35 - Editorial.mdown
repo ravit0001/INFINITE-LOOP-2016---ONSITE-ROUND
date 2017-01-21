@@ -1,0 +1,67 @@
+#PROBLEM LINK:
+[Practice][111]  
+[Contest][222]
+
+**Author:** [RAVIT SINGH MALIK][4444]  
+**Editorialist:** [RAVIT SINGH MALIK][6666]
+
+#DIFFICULTY:
+MEDIUM-HARD
+
+#PREREQUISITES:
+SIEVE , PRIME FACTORS
+ 
+#PROBLEM:
+They are given 2 natural numbers $N$ and $K$. They are required to
+find out the highest power of $K$ which divides $N!$.  
+IN THE OTHER WORDS :  
+you need to output the highest power of $K$ (say $L$) such that $N!$ is divisible by $K^L$..  
+
+#EXPLANATION::  
+
+IF I start with an example,which is like :  
+Find the highest power of 12 ($K$) that divide 49! ($N!$).  
+Sol: We should commit to the memory that the above method is applicable only to prime numbers.    So we should write 12 in its prime factors. $12 = 2^2 \times 3$
+
+We find the maximum power of 2 in 49! = $\frac{49}{2}$ + $\frac{49}{4}$ + $\frac{49}{8}$ + $\frac{49}{16}$ + $\frac{49}{32}$  = $24 + 12 + 6 + 3 + 1 = 46$
+
+So maximum power of $2^2$ in $49!$ is $23$.
+
+Now we find the maximum power of 3 in 49! = $\frac{49}{3}$ + $\frac{49}{9}$ + $\frac{49}{27}$ = $16 + 5 + 1 = 22$.  
+⇒ $49!$ =$(2^2)^{23} \times  3^{22} \times constant$.   
+
+So 22 is the maximum power of 12 that divides 49! exactly.  
+Hence 22 is the answer.
+
+
+Let's take another example ...   
+Find the highest power of $5$ ($K$) that divide $100!$ ($N!$).  
+
+$\frac{100}{2}$ + $\frac{100}{4}$ + $\frac{100}{8}$ + $\frac{100}{16}$ + $\frac{100}{32}$ + $\frac{100}{64}$ ⇒ $50 + 25 + 12 + 6 + 3 + 1 = 97$  .   
+==>>  $100!$ =$5^{24} \times constant$ .  
+Hence $24$ is the answer.  
+
+
+These were the few examples for the given question and for achieving this you have to follow the following steps:    
+
+$1$. make an array of boolen which contains prime numbers as true and non prime numbers as false.  
+$2$. Find prime factors of $K$.  
+$3$. Divide the $N$ with the successive power of the prime number and take sum of the quotient.  
+$4$. repeat step 3 for all prime numbers which are present in $K$.  
+$5$. Divide each sum with the power of prime number present in $K$.  
+$6$. Take minimum from these, which is the required answer.  
+    
+
+
+#AUTHOR'S AND TESTER'S SOLUTIONS:
+Author's solution can be found [here][333]. 
+
+
+#RELATED PROBLEMS:
+
+[111]: https://www.codechef.com/problems/INLO35
+[222]: https://www.codechef.com/INLO1601/problems/INLO35
+[333]: https://www.codechef.com/viewsolution/11782831
+
+[4444]: http://www.codechef.com/users/ravit0001
+[6666]: http://www.codechef.com/users/ravit0001
