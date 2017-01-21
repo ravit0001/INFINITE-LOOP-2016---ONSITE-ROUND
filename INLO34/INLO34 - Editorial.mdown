@@ -1,0 +1,49 @@
+#PROBLEM LINK:
+[Practice][111]  
+[Contest][222]
+
+**Author:** [RAVIT SINGH MALIK][4444]  
+**Editorialist:** [RAVIT SINGH MALIK][6666]
+
+#DIFFICULTY:
+EASY
+
+#PREREQUISITES:
+MATHS,NUMBER THEORY
+ 
+#PROBLEM:
+Find the number of ways of selecting one or more items from N distinct things.
+
+
+#EXPLANATION:
+So, Number of ways of selecting one or more items from N distinct things.
+
+nC0 + nC1 + nC2 + nC3 + ------------- + nCn = $2^n$
+
+nC1 + -----------------nCn =$2^n$ - nC0
+
+= $2^n$ – 1     , [ nC0=1] 
+
+
+FOR example,
+you need to find number of ways of selecting one or more items from 5 distinct things.
+so,  
+
+ 5C0 + 5C1 + 5C2 + 5C3 + 5C4 + 5C5 = $2^5$
+
+5C1 + 5C2 + 5C3 + 5C4 + 5C5 =$2^n$ - 5C0
+
+= $2^5$ – 1=31   
+
+#AUTHOR'S AND TESTER'S SOLUTIONS:
+Author's solution can be found [here][333]. 
+
+
+#RELATED PROBLEMS:
+
+[111]: https://www.codechef.com/problems/INLO34
+[222]: https://www.codechef.com/INLO1601/problems/INLO34
+[333]: https://www.codechef.com/viewsolution/11719133
+
+[4444]: http://www.codechef.com/users/ravit0001
+[6666]: http://www.codechef.com/users/ravit0001
