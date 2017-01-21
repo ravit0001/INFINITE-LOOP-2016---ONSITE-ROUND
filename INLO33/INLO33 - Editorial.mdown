@@ -116,7 +116,6 @@ int dijkstra( int src)
 Author's solution can be found [here][333]. 
 
 
-#RELATED PROBLEMS:
 
 [111]: https://www.codechef.com/problems/INLO33
 [222]: https://www.codechef.com/INLO1601/problems/INLO33
