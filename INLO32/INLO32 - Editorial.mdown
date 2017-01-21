@@ -1,0 +1,56 @@
+#PROBLEM LINK:
+[Practice][111]  
+[Contest][222]
+
+**Author:** [RAVIT SINGH MALIK][4444]  
+**Editorialist:** [RAVIT SINGH MALIK][6666]
+
+#DIFFICULTY:
+MEDIUM
+
+#PREREQUISITES:
+COMPLEXITY , NUMBER THEORY
+ 
+#PROBLEM:
+You have choose correct option for the given questions.
+
+
+#EXPLANATION:
+For question $1$.   
+     $n^2$ $√n$ = $n^{2.5}$= $O(n^{3})$  
+    A theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n, which is usually the number of items. Informally, saying some equation f(n) = O(g(n)) means it is less than some constant multiple of g(n). The notation is read, "f of n is big oh of g of n".
+
+for more information click [here][444]  
+
+For question $2$.  
+   Among the four $Bellman-Ford$ is Dynamic alogorithm,while $Prim's , Kruskal's , Dijkstra's$ algorithm all 
+   are $Greedy$ alogorithm.  
+Dijksra’s algorithm is a Greedy algorithm and time complexity is $O(VLogV)$ (with the use of Fibonacci heap). Dijkstra doesn’t work for Graphs with negative weight edges, Bellman-Ford works for such graphs. Bellman-Ford is also simpler than Dijkstra and suites well for distributed systems. But time complexity of Bellman-Ford is $O(VE)$, which is more than Dijkstra.
+
+For question $3$.  
+    Then the number is $3^3 \times 2^6$ = 1728, and the 28 divisors of 1728 are:
+    so,$(3+1) \times (6+1)$=28.
+
+
+
+ 
+
+1 2 4 8 16  32  64  3 6 12  24  48  96  192 9 18  36  72  144 288 576 27  54  108 216 432 864 1728 
+
+For question $4$.  
+   last two digits of $11 \times 22 \times 33 \times 44 \times 55$ can be find by  $(11 \times 22 \times 33 \times 44 \times 55)$%100=20.
+
+for last digit you can use %10 so,for last 3 digit use %1000.
+
+#AUTHOR'S AND TESTER'S SOLUTIONS:
+Author's solution can be found [here][333]. 
+
+
+#RELATED PROBLEMS:
+
+[111]: https://www.codechef.com/problems/INLO32
+[222]: https://www.codechef.com/INLO1601/problems/INLO32
+[333]: https://www.codechef.com/viewsolution/11763041
+[444]: http://quiz.geeksforgeeks.org/algorithms/analysis-of-algorithms-recurrences/ 
+[4444]: http://www.codechef.com/users/ravit0001
+[6666]: http://www.codechef.com/users/ravit0001
