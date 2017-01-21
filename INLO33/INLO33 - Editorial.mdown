@@ -1,0 +1,127 @@
+#PROBLEM LINK:
+[Practice][111]   
+[Contest][222]
+
+**Author:** [RAVIT SINGH MALIK][4444]   
+**Editorialist:** [RAVIT SINGH MALIK][6666]
+
+#DIFFICULTY:
+HARD
+
+#PREREQUISITES:
+DIJKSTRA , GRAPHS
+ 
+#PROBLEM:
+Your task is to find the minimum time taken from a given source junction to a given destination junction
+ for a vehicle when the traffic starts.
+
+#EXPLANATION:
+This problem is completely based on Dijkstra's algorithm,which is used for
+ finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
+
+The algorithm exists in many variants; Dijkstra's original variant found the shortest path 
+between two nodes, but a more common variant fixes a single node as the "source" node and 
+finds shortest paths from the source to all other nodes in the graph, producing a shortest-path tree. 
+ 
+ $Pseudocode :$
+ 
+<pre><code>
+ 1  function Dijkstra(Graph, source):
+ 2
+ 3      create vertex set Q
+ 4
+ 5      for each vertex v in Graph:             // Initialization
+ 6          dist[v] ← INFINITY                  // Unknown distance from source to v
+ 7          prev[v] ← UNDEFINED                 // Previous node in optimal path from source
+ 8          add v to Q                          // All nodes initially in Q (unvisited nodes)
+ 9
+10      dist[source] ← 0                        // Distance from source to source
+11      
+12      while Q is not empty:
+13          u ← vertex in Q with min dist[u]    // Source node will be selected first
+14          remove u from Q 
+15          
+16          for each neighbor v of u:           // where v is still in Q.
+17              alt ← dist[u] + length(u, v)
+18              if alt < dist[v]:               // A shorter path to v has been found
+19                  dist[v] ← alt 
+20                  prev[v] ← u 
+21
+22      return dist[], prev[]
+
+</code> </pre>
+ 
+ 
+SO,the given question is a simple improvisation of Dijkstra's algorithm, In which each phase, from the current shortest time for a given junction,
+compute when the next green flash will occur to let you travel to its neighbours and 
+use this to update shortest path information.
+
+$CODE$
+<pre><code>
+int minDistance(int dist[], bool sptSet[])
+{
+   // Initialize min value
+   int min = INT_MAX, min_index;
+   for (int v = 1; v <= V; v++)
+     if (sptSet[v] == false && dist[v] <= min)
+         min = dist[v], min_index = v;
+ 
+   return min_index;
+ }  
+
+int dijkstra( int src)
+{
+     int dist[V],f,x,c;    
+     bool sptSet[V]; 
+     for (int i = 0; i <=V; i++)
+        dist[i] = INT_MAX, sptSet[i] = false;  
+  // Distance of source vertex from itself is always 0
+     dist[src] = 0;   
+ 
+     // Find shortest path for all vertices
+     for (int count = 0; count < V-1; count++)  
+     {  
+       // Pick the minimum distance vertex from the set of vertices not  
+       // yet processed. u is always equal to src in first iteration.  
+       int u = minDistance(dist, sptSet);  
+ 
+       // Mark the picked vertex as processed  
+       sptSet[u] = true;  
+ 
+       // Update dist value of the adjacent vertices of the picked vertex.  
+       for (int v = 1; v <=V; v++)  
+          if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX )  
+         {  
+             f=dist[u]+graph[u][v];    
+`             c=f/T[v];   
+             if(v==r)  
+             x=dist[u]+graph[u][v];  
+             
+             else if(f%T[v]!=0)  
+                x=(c+1)*T[v];  
+            else  
+                x=f;  
+            if( x < dist[v])  
+            dist[v] = x;  
+         }
+     }
+     return dist[r];
+     }
+
+</code> </pre> 
+
+===>> dist[r] is the required answer.
+
+
+#AUTHOR'S AND TESTER'S SOLUTIONS:
+Author's solution can be found [here][333]. 
+
+
+#RELATED PROBLEMS:
+
+[111]: https://www.codechef.com/problems/INLO33
+[222]: https://www.codechef.com/INLO1601/problems/INLO33
+[333]: https://www.codechef.com/viewsolution/11803775
+
+[4444]: http://www.codechef.com/users/ravit0001
+[6666]: http://www.codechef.com/users/ravit0001
