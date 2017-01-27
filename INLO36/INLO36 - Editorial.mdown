@@ -1,0 +1,59 @@
+#PROBLEM LINK:
+[Practice][111]   
+[Contest][222]
+
+**Author:** [RAVIT SINGH MALIK][4444]   
+**Editorialist:** [RAVIT SINGH MALIK][6666]
+
+#DIFFICULTY:
+MEDIUM
+
+#PREREQUISITES:
+COMBINATORICS
+ 
+#PROBLEM:
+Find the number of ways to distribute $N$ ladoos among the $M$ soldiers such that each soldier 
+gets at least 2 ladoos.
+
+
+#EXPLANATION:
+
+First Find the number of ways in which $N$ identical objects can be divided into $R$ groups where each group can have any number of objects including $0$ ?  
+Consider the $N$ identical objects as $N$ '0's that you want to group. Now, you want to divide them into $R$ groups with empty groups included. You can do this by placing $(R - 1)$ dividers  among the $N$ items(remember, 1 divider makes 2 groups and so $(R - 1)$ would  make R groups). Assume the dividers are '1's. So now, you have $N$ '0's and $R-1$ '1'. All you have to do now is count the number of unique permutations of them. Each permutation of this set of 1's and 0's would represent unique grouping of the n identical items. The first group would contain all the 0's till the 1st '1' appears, the next group will have all the 0's until the next '1' appears and so on.    
+
+ It is easy to see how that would be equal to $(N + R - 1)! / (N!)*(R - 1)!$. The numerator $(N + R - 1)!$ calculates the number of permutations of $N + R - 1$ objects as if they were not identical(unique). We divide by $(N!)$ and $(R - 1)!$ because we have $'N'$ identical '0's and $(R - 1)$ identical '1's.  
+
+This also happens to be equal to $(n+r-1)C(r-1)$.
+
+
+
+NOW In question you have to find number of ways to distribute $N$ ladoos among the $M$ soldiers such that each soldier 
+gets at least 2 ladoos.  
+
+so, firstly gave 2 ladoos to each $M$ soldiers   
+   now we left with 
+=> $N = N - 2 \times M$  ladoos.  
+now the question has became to find Find the number of ways in which $N$ identical objects can be divided into $M$ groups where each group can have any number of objects including $0$ ?  
+
+so the answer is $(N+M-1)C(M-1)$.    
+
+   FOR example :    
+Find the number of ways to distribute $11$ ladoos among the $5$ soldiers such that each soldier 
+gets at least 2 ladoos.  
+so,  
+ $N$ = $11-2 \times 5$ = $1$  
+$(N+M-1)C(M-1)$ = $(1+5-1)C(5-1) = 5$ .  .
+ which is the required answer.
+
+#AUTHOR'S AND TESTER'S SOLUTIONS:
+Author's solution can be found [here][333]. 
+
+
+#RELATED PROBLEMS:
+
+[111]: https://www.codechef.com/problems/INLO36
+[222]: https://www.codechef.com/INLO1601/problems/INLO36
+[333]: https://www.codechef.com/viewsolution/11773784
+
+[4444]: http://www.codechef.com/users/ravit0001
+[6666]: http://www.codechef.com/users/ravit0001
